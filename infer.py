@@ -622,9 +622,9 @@ def change_audio_mode(vc_audio_mode):
             gr.Dropdown.update(visible=True)
         )
         
-with gr.Blocks() as app:
+with gr.Blocks(theme='bethecloud/storj_theme', title='HRVC') as app:
     gr.Markdown(
-        "# <center> Advanced RVC Inference\n"
+        "# <center> HRVC\n"
     )
     with gr.Row():
         sid = gr.Dropdown(
